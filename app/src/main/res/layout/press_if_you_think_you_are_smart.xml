@@ -28,12 +28,4 @@
         android:layout_alignStart="@+id/radioButton2"
         android:checked="false"/>
 
-    <Switch
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Switch"
-        android:id="@+id/switch1"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/radioButton2"
-        android:layout_alignStart="@+id/radioButton2"/>
 </RelativeLayout>

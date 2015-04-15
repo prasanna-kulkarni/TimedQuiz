@@ -10,11 +10,6 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".SecondQuestion"
@@ -23,6 +18,19 @@
         <activity
             android:name=".WrongAnswerActivity"
             android:label="@string/title_activity_false" >
+        </activity>
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/title_activity_home_screen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PressIfYouThinkYouAreSmart"
+            android:label="@string/title_activity_press_if_you_think_you_are_smart" >
         </activity>
     </application>
 

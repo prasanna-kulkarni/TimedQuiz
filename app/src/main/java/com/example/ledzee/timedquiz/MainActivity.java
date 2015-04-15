@@ -33,10 +33,12 @@ public class MainActivity extends ActionBarActivity {
         final TextView question;
         Button trueButton;
         Button falseButton;
+        final TextView timeRemaining;
         //QuestionnAnswers qa = new QuestionnAnswers();
         Random randomGenerator = new Random();
         final int randomNumber = randomGenerator.nextInt(qa.qdata.size());
         question = (TextView) findViewById(R.id.questionView);
+        timeRemaining = (TextView) findViewById(R.id.timeRemaining);
         questionAnswer = qa.getQuestionAnswer();
         final CountDownTimer countDownTimer;
 
@@ -57,18 +59,20 @@ public class MainActivity extends ActionBarActivity {
 
     findViewById(R.id.falseButton);
 
+
         //This timer is for the whole app as whole which will be used if needed
-//    new CountDownTimer(16000,1000) {
-//        //Log.v(MyTaG, "index=" + i);
-//        public void onFinish () {
-//            Intent gameover = new Intent(MainActivity.this, WrongAnswerActivity.class);
-//            startActivity(gameover);
-//            Log.d("OnclickTag", "Game over");
-//        }
-//
-//    public void onTick(long millisUntilFinished) {
-//    }
-//}.start();
+    new CountDownTimer(50000,1000) {
+        //Log.v(MyTaG, "index=" + i);
+        public void onFinish () {
+            Intent gameOver = new Intent(MainActivity.this, WrongAnswerActivity.class);
+            startActivity(gameOver);
+            Log.d("OnclickTag", "Game over");
+        }
+
+    public void onTick(long millisUntilFinished) {
+        timeRemaining.setText("seconds remaining: " + millisUntilFinished / 1000);;
+    }
+}.start();
 
 
         trueButton.setOnClickListener(new View.OnClickListener(){
@@ -81,20 +85,20 @@ public void onClick(View v){
         questionAnswer=qa.getQuestionAnswer();
         question.setText(questionAnswer.question);
 
-             CountDownTimer countDownTimer = new CountDownTimer(10000,1000) {
-                @Override
-                public void onTick(long millisUntilFinished) {
-
-                }
-
-                @Override
-                public void onFinish() {
-
-                    Intent gameover = new Intent(MainActivity.this, WrongAnswerActivity.class);
-                    startActivity(gameover);
-                    Log.d("OnclickTag", "Game over");
-                }
-            }.start();
+//             CountDownTimer countDownTimer = new CountDownTimer(10000,1000) {
+//                @Override
+//                public void onTick(long millisUntilFinished) {
+//
+//                }
+//
+//                @Override
+//                public void onFinish() {
+//
+//                    Intent gameover = new Intent(MainActivity.this, WrongAnswerActivity.class);
+//                    startActivity(gameover);
+//                    Log.d("OnclickTag", "Game over");
+//                }
+//            }.start();
 
 
         }

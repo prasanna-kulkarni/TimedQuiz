@@ -9,8 +9,7 @@ import java.util.Random;
  */
 
 public class QuestionnAnswers {
-    //List<String> questions;
-    //List<Integer> answers;
+
     List<QnAData> qdata;
 
 

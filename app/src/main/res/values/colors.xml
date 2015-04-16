@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Primary">#ff95ff35</color>
+    <color name="Secondary">#ff51b46d</color>
+    <color name="orangeDark">#F57C00</color>
+    <color name="tabInactive">#fde3c8</color>
+    <color name="tabIndicator">#FFFFFF</color>
+
+</resources>

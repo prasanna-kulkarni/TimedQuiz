@@ -1,5 +1,9 @@
 <resources>
+
+
     <string name="app_name">TimedQuiz</string>
+
+
 
     <string name="second_question">Hello world!, this is the second question</string>
     <string name="action_settings">Settings</string>
@@ -9,11 +13,11 @@
 
     <string name="true_button">True</string>
     <string name="false_button">False</string>
-    <string name="try_again_looser">Try again looser, you are pathetic</string>
+    <string name="try_again_looser">Try again, looser!</string>
     <string name="you_did_it">Continue to go onto next level</string>
     <string name="time_remainig_button_text">Seconds remaining:</string>
     <string name="lvl_button_text">Lvl:</string>
-    <string name="title_activity_home_screen">HomeScreen</string>
+
 
     <string name="hello_world">Hello world!</string>
     <string name="simple_mode">Simple Mode</string>
@@ -23,6 +27,7 @@
     </string>
     <string name="if_you_think_you_are_smart">Check this if you think you are smart</string>
     <string name="i_am_not_smart">I am not Smart. Take me back</string>
+    <string name="game_over">Game Over!!</string>
 
 
 </resources>

@@ -6,22 +6,22 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppBaseTheme" >
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
             android:name=".SecondQuestion"
-            android:label="@string/title_activity_second_question" >
+            android:label="@string/app_name" >
         </activity>
         <activity
             android:name=".WrongAnswerActivity"
-            android:label="@string/title_activity_false" >
+            android:label="@string/app_name" >
         </activity>
         <activity
             android:name=".HomeScreen"
-            android:label="@string/title_activity_home_screen" >
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

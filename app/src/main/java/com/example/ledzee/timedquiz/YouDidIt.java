@@ -1,44 +1,24 @@
 package com.example.ledzee.timedquiz;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageButton;
 
 
-public class WrongAnswerActivity extends ActionBarActivity {
-
-    private Toolbar toolbar;
+public class YouDidIt extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.wrong_answer_activity);
-
-
-        ImageButton playAgain = (ImageButton) findViewById(R.id.playAgainButton);
-        playAgain.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startAgain = new Intent(WrongAnswerActivity.this, MainActivity.class);
-                startAgain.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(startAgain);
-                finish();
-
-            }
-        });
-
+        setContentView(R.layout.you_did_it);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_false, menu);
+        getMenuInflater().inflate(R.menu.menu_you_did_it, menu);
         return true;
     }
 

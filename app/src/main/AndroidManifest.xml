@@ -32,6 +32,10 @@
             android:name=".PressIfYouThinkYouAreSmart"
             android:label="@string/title_activity_press_if_you_think_you_are_smart" >
         </activity>
+        <activity
+            android:name=".YouDidIt"
+            android:label="@string/title_activity_you_did_it" >
+        </activity>
     </application>
 
 </manifest>

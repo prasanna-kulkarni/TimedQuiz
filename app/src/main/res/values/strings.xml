@@ -28,6 +28,7 @@
     <string name="if_you_think_you_are_smart">Check this if you think you are smart</string>
     <string name="i_am_not_smart">I am not Smart. Take me back</string>
     <string name="game_over">Game Over!!</string>
+    <string name="title_activity_you_did_it">YouDidIt</string>
 
 
 </resources>
